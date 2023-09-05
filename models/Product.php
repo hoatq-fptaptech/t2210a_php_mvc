@@ -31,6 +31,14 @@ class Product
     }
 
     public function store($data){
-
+        $sql = "insert into $this->table(name,price,qty,description)
+                values('".$data["name"]."',
+                ".$data["price"].",
+                ".$data["qty"].",
+                '".$data["description"]."'
+                )";
+        $conn = connect();
+        $result = $conn->query($sql);
+        return true;
     }
 }
