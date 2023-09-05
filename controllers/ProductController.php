@@ -26,11 +26,17 @@ class ProductController
     }
 
     public function create(){
-        echo "Create Product";
+        include_once("views/product/create.php");
     }
 
     public function save(){
-
+//        $name = $_POST["name"];
+//        $price = $_POST["price"];
+//        $qty = $_POST["qty"];
+//        $description = $_POST["description"];
+        $productObj = new Product();
+        $products = $productObj->store($_POST);
+        header("Location: index.php?page=product");
     }
 
     public function edit(){

@@ -29,4 +29,8 @@ class Product
         }
         return $data;
     }
+
+    public function store($data){
+
+    }
 }

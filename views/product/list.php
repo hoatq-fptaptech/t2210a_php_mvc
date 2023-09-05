@@ -12,7 +12,7 @@
 <body>
     <section>
         <div class="container">
-            <a href="#" class="btn btn-outline-primary">Create a new product</a>
+            <a href="?page=product&action=create" class="btn btn-outline-primary">Create a new product</a>
             <table class="table table-striped">
                 <thead>
                 <tr>
